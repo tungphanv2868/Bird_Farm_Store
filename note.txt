@@ -1,0 +1,41 @@
+git init : khởi tạo repository
+git remote add origin https://github.com/tungphanv2868/react_base.git => Liên kết repository local và repository remote
+
+- setup account
+git config user.name "tungphanv2868"
+git config user.email "tungphanv2868@gmail.com"
+
+- Đẩy code từ local lên remote
+    + git add -A : chọn
+
+    + git commit -m "react base" : xác nhận ghi kèm chú thích
+
+    + git push -u origin master : đẩy code lên git lần đầu tiên
+
+    + git push : đẩy lần 2 trở đi 
+
+
+branch = nhánh 
+ 
+ - Nhóm trưởng làm: 
+    + git fetch : đi đồng bộ thông tin, xem coi có gì mới không
+    + git checkout login
+
+git checkout -b login : tạo ra nhánh login từ nhánh hiện tại
+git branch : list các nhánh đang có 
+
+git merge login : đưa code từ nhánh login về nhánh hiện tại
+
+
+- Lấy source từ 1 repo 
+    + git clone url . : Clone source code vào folder hiện tại
+    + Ngược lại, git clone url ( không có dấu chấm ) : khi clone source code về thì nó sẽ tạo ra 1 folder trung giang
+    vd: git clone https://github.com/tungphanv2868/Bird_Farm_Store.git .
+
+- git pull :  lấy code mới nhất từ remote
+
+-git log : xem lại danh sách các lệnh đã commit
+
+- git stash : khôi phục code về lần commit gần nhất
+
+- git stash pop : lấy ra thằng gần nhất
