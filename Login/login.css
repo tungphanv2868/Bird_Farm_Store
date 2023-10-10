@@ -91,7 +91,7 @@ body{
     pointer-events: none;
 }
 .input-box input:focus~label,
-.input-box input:invalid~label{
+.input-box input:valid~label{
     top: -5px;
 }
 .input-box input{
