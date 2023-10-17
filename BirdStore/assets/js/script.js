@@ -44,3 +44,11 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 50 ? header.classList.add("active")
     : header.classList.remove("active");
 });
+
+
+const icon = document.querySelector('.icon-search');
+const search = document.querySelector('.search');
+icon.onclick = function(){
+  search.classList.toggle('active');
+
+}
