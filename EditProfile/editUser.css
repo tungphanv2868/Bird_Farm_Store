@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 .wrapper {
     max-width: 1920px;
@@ -50,8 +51,11 @@ header{
 }
 .logo{
     font-size: 2em;
-    color: #000;
+    color: #fff;
     user-select: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.8;
 }
 .navigation a{
     position: relative;
@@ -147,25 +151,23 @@ header{
 } */
 section{
     width: 100%;
-    height: 36rem;
+    height: cover;
 }
 section .profile{
     top: 50%;
     left: 50%;
-    transform: translate(15%, 30%);
-    width: 60rem;
-    height: 25rem;
+    transform: translate(1.6%, 30%);
+    width: 75rem;
+    height: cover;
     display: flex;
     box-shadow: 0 1px 20px 0 rgba(21, 27, 30, 0.8);
     border-radius: 10px;
     
 }
 .profile .profile__left{
-    width: 35%;
+    width: 25%;
     text-align: center;
-    padding: 40px;
-    margin-right: 50px;
-    
+    padding: 50px;
 }
 .profile .profile__left image{
     margin-bottom: 10px;
@@ -201,27 +203,43 @@ section .profile{
  font-size: 25px;
  color: #120bd6;
  margin-bottom: 15px;
+ text-align: center;
+ font-weight: 600;
 }
-
+/* update */
+.profile__right .info_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 115%;
+}
+.profile__right .info_data .info_data-left{
+    margin-right: 20px;
+}
+.profile__right .info_data .info_data-right{
+    margin-right: 20px;
+}
 .profile .profile__right .info{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
-.profile .profile__right .info h4{
-    font-size: 18px;
-    padding-right: 20px;
-    color: #000;
+.profile .profile__right .info h5{
+    margin-right: 40px;
+    width: 100%;
 }
-.profile .profile__right .info p{
-    color: #000;
-    font-size: 17px;
-}
-.profile .profile__right a button{
+.profile .profile__right .info input{
+    width: 100%;
+    /* margin-right: 40px; */
+    outline: none;
     border-radius: 5px;
-    padding: 5px 5px;
-    color: rgba(65, 57, 57, 0.493);
-    transition: 1s;
+    border: 1px solid #ccc;
+    /* padding-left:15px ; */
+    font-size: 14px;
+    transition: all 0.4s ease ;
 }
-.profile .profile__right a button:hover{
-    background-color: rgb(88, 79, 79);
+.button{
+    text-align: center;
+    margin-top: 14px;
+
 }
